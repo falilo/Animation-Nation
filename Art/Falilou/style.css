@@ -1,0 +1,26 @@
+body{
+	background-color: yellowgreen;
+}
+
+h1{
+	text-align: center;
+}
+
+div {	
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myfirst;
+  animation-duration: 10s;
+  position: relative;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
